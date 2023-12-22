@@ -1,12 +1,11 @@
+// Creación de un vector con inicialización de 3 valores y otro
+// con longitud fija asiganaa...
 fn main() {
-  // Days of the week...
-    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    
-    let first_day = days[0];
-    let second_day = days[1];
-    let third_day = days[2];
+    // Se declara un vector, se inicializa con tres valores...
+        let three_nums = vec![7, 43, 21];
+    // Se declara un vector, valor: 0 y longitud: 5,,,
+        let zeroes = vec![0; 5];
 
-    println!("El 1er día de la semana es: {}", first_day);
-    println!("El 2do día de la semana es: {}", second_day);
-    println!("El 3er día de la semana es: {}", third_day);
+        println!("Initial vector: {:?}", three_nums);
+        println!("Zeroes: {:?}", zeroes);
 }
