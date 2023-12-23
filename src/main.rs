@@ -1,19 +1,12 @@
-// Creación de un vector vacío, en caso de querer hacerlo
-// más grande o más chico...
+// INDEXACION DE UN VECTOR...
 fn main() {
-    // Se declara un vector vacío...
-        let mut fruit = Vec::new();
+  // Se declara un vector con 3 valores...
+    let mut index_vec = vec![15, 3, 46];
+    let three = index_vec[1];
 
-    // Se agregan valores al final del vector, el type cambia
-    // de generic `T` a String...
-        fruit.push("Orange");
-        fruit.push("Banana");
-        fruit.push("Pineapple");
-        fruit.push("apple");
+    println!("Vector: {:?}, three = {}", index_vec, three);
 
-        println!("Fruits: {:?}", fruit);
-        println!("");
-    // El método 'pop' elimina el último elemento del vector...
-        println!("Pop off: {:?}", fruit.pop());
-        println!("New Fruits: {:?}", fruit);
+    index_vec[1] = index_vec[1] + 7;
+
+    println!("Vector: {:?}", index_vec);
 }
