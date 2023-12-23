@@ -1,11 +1,19 @@
-// Creación de un vector con inicialización de 3 valores y otro
-// con longitud fija asiganada...
+// Creación de un vector vacío, en caso de querer hacerlo
+// más grande o más chico...
 fn main() {
-    // Se declara un vector, se inicializa con tres valores...
-        let three_nums = vec![7, 43, 21];
-    // Se declara un vector, valor: 0 y longitud: 5,,,
-        let zeroes = vec![0; 5];
+    // Se declara un vector vacío...
+        let mut fruit = Vec::new();
 
-        println!("Initial vector: {:?}", three_nums);
-        println!("Zeroes: {:?}", zeroes);
+    // Se agregan valores al final del vector, el type cambia
+    // de generic `T` a String...
+        fruit.push("Orange");
+        fruit.push("Banana");
+        fruit.push("Pineapple");
+        fruit.push("apple");
+
+        println!("Fruits: {:?}", fruit);
+        println!("");
+    // El método 'pop' elimina el último elemento del vector...
+        println!("Pop off: {:?}", fruit.pop());
+        println!("New Fruits: {:?}", fruit);
 }
